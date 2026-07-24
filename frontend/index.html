@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlacementPilot Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PlacementPilot</p>
+        <h1>Resume Analyzer</h1>
+      </div>
+      <div id="apiStatus" class="status-pill">Checking API</div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel input-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Input</p>
+            <h2>Resume and role</h2>
+          </div>
+          <button id="loadSampleBtn" class="ghost-button" type="button">Load sample</button>
+        </div>
+
+        <label class="field">
+          <span>Target role</span>
+          <select id="targetRole">
+            <option>Full Stack Java Python Developer</option>
+            <option>Backend Developer</option>
+            <option>Cybersecurity Analyst</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Resume text</span>
+          <textarea id="resumeText" rows="14" placeholder="Paste resume text here"></textarea>
+        </label>
+
+        <label class="file-drop">
+          <input id="resumeFile" type="file" accept=".txt,.md" />
+          <span>Upload TXT or MD resume</span>
+        </label>
+
+        <label class="field">
+          <span>Job description</span>
+          <textarea id="jobDescription" rows="8" placeholder="Paste a job description for sharper matching"></textarea>
+        </label>
+
+        <button id="analyzeBtn" class="primary-button" type="button">Analyze resume</button>
+        <p id="errorMessage" class="error-message"></p>
+      </section>
+
+      <section class="panel results-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Output</p>
+            <h2>Analysis</h2>
+          </div>
+        </div>
+
+        <div class="score-layout">
+          <div id="scoreRing" class="score-ring" style="--score: 0">
+            <span id="scoreValue">--</span>
+            <small id="gradeValue">Grade</small>
+          </div>
+          <div>
+            <h3 id="resultTitle">Ready to analyze</h3>
+            <p id="resultSummary">Paste your resume and run the analyzer.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div>
+            <span id="skillCount">0</span>
+            <p>Skills</p>
+          </div>
+          <div>
+            <span id="wordCount">0</span>
+            <p>Words</p>
+          </div>
+          <div>
+            <span id="actionCount">0</span>
+            <p>Action verbs</p>
+          </div>
+          <div>
+            <span id="impactCount">0</span>
+            <p>Impacts</p>
+          </div>
+        </div>
+
+        <div class="result-block">
+          <h3>Matched skills</h3>
+          <div id="matchedSkills" class="chip-list muted">No analysis yet</div>
+        </div>
+
+        <div class="result-block">
+          <h3>Missing skills</h3>
+          <div id="missingSkills" class="chip-list muted">No analysis yet</div>
+        </div>
+
+        <div class="result-block">
+          <h3>Detected skills</h3>
+          <div id="detectedSkills" class="skill-groups muted">No analysis yet</div>
+        </div>
+
+        <div class="result-block">
+          <h3>Resume sections</h3>
+          <div id="sections" class="section-list muted">No analysis yet</div>
+        </div>
+
+        <div class="result-block">
+          <h3>Suggestions</h3>
+          <ol id="suggestions" class="suggestions muted">
+            <li>No analysis yet</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

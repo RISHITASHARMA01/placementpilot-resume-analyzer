@@ -1,0 +1,24 @@
+Rishita Sharma
+Email: rishita@example.com
+GitHub: https://github.com/RISHITASHARMA01
+LinkedIn: https://linkedin.com/in/rishita-sharma-87655b311
+
+Summary
+Computer Engineering student interested in full stack development, cybersecurity, and cloud security.
+
+Education
+B.Tech Computer Engineering, VIT
+
+Skills
+Java, Python, JavaScript, SQL, React, Spring Boot, REST APIs, Git, Linux, Docker, AWS, MySQL, Computer Networks, OOP, DSA
+
+Projects
+PlacementPilot Resume Analyzer
+Built a Java and Python resume analyzer that extracts skills, compares resumes with job descriptions, and gives improvement suggestions.
+Implemented a Java API server and integrated a Python analysis engine for scoring and skill-gap detection.
+
+Cloudflare Zero Trust Lab
+Designed a Zero Trust learning lab with Cloudflare tunnels, access policies, and security posture checks.
+
+Experience
+Developed academic projects using Java, Python, React, SQL, and Linux tools.
