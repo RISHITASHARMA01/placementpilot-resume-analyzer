@@ -28,7 +28,7 @@ Python resume analyzer
 - Skill extraction by category.
 - Resume score and grade.
 - Missing skill detection.
-- Section checks for education, skills, projects, experience, and certifications.
+- Section checks for education, skills, projects, and experience.
 - Suggestions based on missing evidence, weak sections, and keyword gaps.
 
 ## Run locally

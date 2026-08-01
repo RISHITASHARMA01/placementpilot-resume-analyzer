@@ -125,7 +125,6 @@ SECTION_PATTERNS = {
     "Projects": r"\b(projects|project experience|academic projects)\b",
     "Experience": r"\b(experience|internship|work experience|employment)\b",
     "Education": r"\b(education|degree|university|college|bachelor|b\.tech|btech)\b",
-    "Certifications": r"\b(certifications|certificates|certified)\b",
 }
 
 
